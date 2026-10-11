@@ -87,29 +87,17 @@ header {
     padding-right: 32px;
 }
 
-.portrait-frame {
-    position: relative;
-    width: 100%;
-    max-width: 180px;
-    aspect-ratio: 1;
-    overflow: hidden;
-    border: 3px solid #5BC0BE;
-    border-radius: 50%;
-}
-
-.portrait-frame .profile-img {
-    position: absolute;
+.profile-img {
     display: block;
-    width: 125%;
-    height: 125%;
-    top: -12.5%;
-    left: -12.5%;
+    width: 180px;
+    height: 180px;
     min-height: 0;
     float: none;
     padding: 0;
+    border: 3px solid #5BC0BE;
+    border-radius: 50%;
     object-fit: cover;
     object-position: center 65%;
-    border-radius: 50%;
 }
 
 header h1 {
@@ -285,7 +273,7 @@ footer h2 {
     margin-bottom: 0;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 800px) {
     .content-wrap {
         padding: 36px 22px;
     }
@@ -307,8 +295,9 @@ footer h2 {
         padding: 0;
     }
 
-    .portrait-frame {
+    .profile-img {
         width: 112px;
+        height: 112px;
         margin-bottom: 24px;
     }
 
