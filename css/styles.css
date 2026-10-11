@@ -9,7 +9,9 @@
 
 /* Global styles
 ------------------------------------*/
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -101,6 +103,7 @@ header {
     padding: 0;
     object-fit: cover;
     object-position: center 65%;
+    border-radius: 50%;
 }
 
 header h1 {
